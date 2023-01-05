@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2? familia= Poppins:ital,peso@0,300;0,400;0,700;1,200;1,500 & display=swap');
+
+:root{
+    --padding-container: 100px 0;
+    --color-tittle: #000000;
+    
+}
+
+body{
+
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(78, 60, 0);
+
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+}
+
+.hero{
+width: 100%;
+height: 100vh;
+min-width: 600px;
+max-width: 800px;
+position: relative;
+display: grid;
+grid-template-rows: 100px 1fr;
+color: #ffffff;
+
+
+}
+
+.hero::before{
+    content: "";
+    position:absolute;
+    top: 0;
+    left: 0%;;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #000000c7 0%, #000000c7 100%),url('../images/joanna-kosinska-bF2vsubyHcQ-unsplash.jpg');
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 49% 95%, 0 80%);
+    z-index: -1;
+}
+
+
+/* Nav */
+
+.nav{
+    --padding-container:0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav__tittle{
+    font-weight: 300;
+    left: 35%;
+}
+
+
+.nav__link{
+    margin-left: auto;
+    padding: 0%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;
+}
+
+.nav__items{
+    list-style: none;
+}
+
+
+.nav__links{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+
+.nav__menu{
+    margin-left: auto;
+    cursor: pointer;
+    cursor: none;
+    left: 35%;;
+}
+
+
+
+.nav__img{
+    display: block;
+    width: 30px;
+}
+
+.nav__close{
+    display:var(--show, none);
+}
+
+/* hero container */
+
+.hero__container{
+    max-width: 800px;
+    --padding-container:0;
+    display: grid;
+    grid-auto-rows: max-content;
+    align-content: center;
+    gap: 1em;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.hero__tittle{
+    font-size: 3rem;
+}
+
+.hero__paragraph{
+    margin-bottom: 20px;
+}
+
+.cta{
+    display: inline-block;
+    background-color: #0026ff;
+    justify-self: center;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 13px 35px;
+    border-radius: 32px;
+}
+
+/* About */
+
+.about{
+    text-align: center;
+}
+
+.nav__subtittle{
+    color: #00aeff;
+    font-size: 2rem;
+    margin-bottom: 25px;
+    left: 35%;
+}
+
+.about__paragraph{
+    line-height: 1.7;
+}
+
+.about__main{
+    padding-top: 80px;
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+    gap: 1em;
+    overflow: hidden;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+
+}
+
+
+.about__icons{
+    display: grid;
+    gap: 1em;
+    justify-self: center;
+    width: 260px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.about__icon{
+    width: 80px;
+    justify-self: center;
+}
+
+/* knowledge */
+
+.knowledge{
+    background-color: #e5e5f7;
+background: repeating-linear-gradient( 45deg, #444cf7, #444cf7 5px, #e5e5f7 5px, #e5e5f7 25px );
+overflow: hidden;
+}
+
+.knowledge__container{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 8em;
+    align-items: right;
+}
+
+.knowledge__picture{
+    max-width: 1000px;
+}
+
+.knowledge__paragraph{
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+.knowledge__img{
+    width: 175px;
+    display: block;
+    
+}
+
+html{
+scroll-behavior: smooth;
+
+}
